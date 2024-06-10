@@ -12,7 +12,6 @@ Makefile
 .gitignore
 vignettes/.gitignore
 ..Rcheck
-pkgdown
 README.html
 README.md
 local
@@ -29,3 +28,5 @@ lastMiKTeXException
 ^Meta$
 ^vignettes$
 ^revdep$
+^\.github$
+^pkgdown$
