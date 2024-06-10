@@ -1,8 +1,0 @@
-pandoc: '2.18'
-pkgdown: 2.0.3
-pkgdown_sha: ~
-articles:
-  manhattan: manhattan.html
-  regionplot: regionplot.html
-last_built: 2022-09-27T13:24Z
-
