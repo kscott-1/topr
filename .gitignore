@@ -31,6 +31,7 @@ revdep/
 .Rproj.user/
 
 # produced vignettes
+vignettes/*.html
 vignettes/*.pdf
 
 # OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
@@ -47,20 +48,20 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
+# pkgdown site
+docs/
+
 # translation temp files
 po/*~
 
 # test output files
 tests/testthat/Rplots.pdf
 
+# RStudio Connect folder
+rsconnect/
+
 ### R.Bookdown Stack ###
 # R package: bookdown caching files
 /*_files/
 
 # End of https://www.toptal.com/developers/gitignore/api/r
-inst/doc
-/Meta/
-/doc/
-
-snps.*
-
