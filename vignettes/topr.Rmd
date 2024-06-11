@@ -2,11 +2,7 @@
 title: "Getting started with topr"
 output: rmarkdown::html_vignette
 description: |
-  topr is a graphical package to visualize, explore and annotate genetic
-  association results. In particular, using only the chromosome, position
-  and p-value of each variant in results dataframes, topr makes it easy to
-  display gene annotations and multiple traits in a single manhattan plot.
-  Other functionality includes regional plots & locus zoom plots.
+  The topr package is a set of functions used to visualize, explore and annotate genetic association results.
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteIndexEntry{Getting started with topr}
