@@ -1,0 +1,43 @@
+---
+title: "Extending manhattan plots with manhattanExtra"
+output: rmarkdown::html_vignette
+description: |
+  The topr package is a set of functions used to visualize, explore and annotate genetic association results.
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{Extending manhattan plots with manhattanExtra}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r ex_setup, include=FALSE}
+knitr::opts_chunk$set(
+  message = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+  )
+library(topr)
+library(magrittr)
+set.seed(0)
+```
+
+When using the regular `manhattan` function, the user can specify a P-value threshold to highlight significant associations. However, sometimes it is useful to highlight variants using both a genome-wide significant threshold and a suggestive threshold. A good use case for this could be an under powered study with a small sample size. The `manhattanExtra` extension of `manhattan` allows the user to easily do this.
+
+There are no additional required arguments for this function, as shown below.
+
+```{r manhextra, fig.width=12, fig.height=5}
+manhattanExtra(CD_UKBB)
+```
+
+The `manhattanExtra` function can be customized using some of its optional arguments, including `genome_wide_thresh`, `suggestive_thresh`, `flank_size`. The `flank_size` parameter is used to denote the size on either side of a top hit that will be included in the colored grouping for that hit.
+
+The flank size can be large -
+
+```{r manhextra2, fig.width=12, fig.height=5}
+manhattanExtra(CD_UKBB, genome_wide_thresh = 5e-9, suggestive_thresh = 1e-7, flank_size = 1e6)
+```
+
+Or the flank size can be small -
+
+```{r manhextra3, fig.width=12, fig.height=5}
+manhattanExtra(CD_UKBB, genome_wide_thresh = 5e-9, suggestive_thresh = 1e-7, flank_size = 1e4)
+```
