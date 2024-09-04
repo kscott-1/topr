@@ -1,13 +1,12 @@
 pandoc: 3.1.11
-pkgdown: 2.0.9
+pkgdown: 2.1.0
 pkgdown_sha: ~
 articles:
-  manhattan: manhattan.html
-  manhattanExtra: manhattanExtra.html
-  regionplot: regionplot.html
+  articles/locuszoom: locuszoom.html
+  articles/manhattanExtra: manhattanExtra.html
+  articles/moreManhattan: moreManhattan.html
   topr: topr.html
-last_built: 2024-06-11T17:00Z
+last_built: 2024-09-04T17:35Z
 urls:
   reference: https://kscott-1.github.io/topr/reference
   article: https://kscott-1.github.io/topr/articles
-
