@@ -31,3 +31,5 @@ lastMiKTeXException
 ^Meta$
 ^vignettes$
 
+^pkgdown$
+^\.github$
